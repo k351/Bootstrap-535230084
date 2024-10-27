@@ -10,21 +10,18 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-md bg-black px-3">
-        <div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark bg-black">
+        <div class="container px-2">
             <a class="navbar-brand text-white d-flex align-items-center" href="#">
                 <img src="Images/logo.webp" alt="Logo" width="80" height="50">
                 Lifestyle Vibes
             </a>
-    
-            <!-- Toggler button for mobile screens -->
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                 aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
-            <!-- Collapsible menu -->
+
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav ms-auto text-center">
                     <li class="nav-item">
@@ -36,65 +33,67 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Contact</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#" role="button">Subscribe</a>
-                    </li>
+                    <button class="nav-btn btn btn-sm btn-outline-light ms-2">Subscribe</button>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <main class="container-fluid p-0">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
 
+            <div class="carousel-inner">
 
+                <div class="carousel-item align-items-center active">
+                    <img src="./Images/carousel1.jpg" class="d-block w-100" alt="Lifestyle image 1">
+                    <div class="carousel-caption d-block text-center bg-dark bg-opacity-50 p-4 rounded">
+                        <h2>Welcome to the Lifestyle Hub</h2>
+                        <p>Explore trends, wellness, and living your best life.</p>
+                    </div>
+                </div>
 
-    <main class="container my-5">
-        <div class="row">
-            <section class="col">
-                <h2 class="mb-3">Welcome to the Lifestyle Hub</h2>
-                <h3 class="mb-4">Explore trends, wellness, and living your best life</h3>
-                <p>
-                    Lifestyle is all about finding balance, embracing health, and living
-                    in the moment. Whether you're into fitness, mindfulness, or just
-                    looking to elevate your daily routines, you've come to the right
-                    place.
-                </p>
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1507919909716-c8262e491cde?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Wellness lifestyle image from Unsplash" class="img-fluid my-4" />
-                    <figcaption>
-                        <a href="https://unsplash.com" target="_blank">Photo from Unsplash</a>
-                    </figcaption>
-                </figure>
-                <h3 class="mt-5">Latest in Wellness</h3>
-                <p>
-                    Discover the latest trends in wellness, from meditation techniques
-                    to fitness tips that keep you grounded and healthy.
-                </p>
-                <h3>Explore Fashion & Trends</h3>
-                <p>
-                    Stay ahead in fashion with insights into what's trending,
-                    sustainable fashion tips, and more.
-                </p>
-            </section>
+                <div class="carousel-item">
+                    <img src="./Images/carousel2.webp" class="d-block w-100" alt="Lifestyle image 2">
+                    <div class="carousel-caption d-block text-center bg-dark bg-opacity-50 p-4 rounded">
+                        <h2>Latest in Wellness</h2>
+                        <p>Discover trends in wellness, from meditation techniques to fitness tips.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item align-items-center">
+                    <img src="./Images/carousel3.png" class="d-block w-100" alt="Lifestyle image 3">
+                    <div class="carousel-caption d-block text-center bg-dark bg-opacity-50 p-4 rounded">
+                        <h2>Embrace Healthy Choices</h2>
+                        <p>Fuel your body with wholesome, nutritious foods for a vibrant life.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
-    <section class="bg-light py-5">
+    <section class="bg-black text-white py-5">
         <div class="container">
             <div class="text-center">
                 <h2>Join Our Community</h2>
                 <h3 class="mb-4">Subscribe for the latest lifestyle updates</h3>
                 <form class="row g-3 justify-content-center">
                     <div class="col-md-4">
-                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name"
-                            aria-label="First Name" required />
+                        <input type="text" class="form-control bg-dark text-white border-light" id="firstname"
+                            name="firstname" placeholder="First Name" aria-label="First Name" required />
                     </div>
                     <div class="col-md-4">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email"
-                            aria-label="Email" required />
+                        <input type="email" class="form-control bg-dark text-white border-light" id="email" name="email"
+                            placeholder="Email" aria-label="Email" required />
                     </div>
-                    <div class="col-md-2">
-                        <button type="submit" class="btn btn-primary w-100" onclick="event.preventDefault()">
+                    <div class="d-grid col-md-2">
+                        <button type="submit" class="btn btn-outline-light btn-block w-100"
+                            onclick="event.preventDefault()">
                             Subscribe
                         </button>
                     </div>
@@ -103,15 +102,9 @@
         </div>
     </section>
 
-    <footer class="container-fluid text-center py-3 text-bg-dark">
-        <small>
-            <a href="#">Privacy Policy</a> •
-            <a href="#">Terms & Conditions</a>
-        </small>
-        <br>
-        <br>
+    <footer class="container-fluid text-center py-3 bg-secondary text-white">
         <div class="text-center">
-            <h6>Copyright @ 2024 Alvin Kurniawan | Hevy All Rights Reserved</h6>
+            <h6>Copyright © 2024 Alvin Kurniawan | Hevy All Rights Reserved</h6>
         </div>
     </footer>
 
