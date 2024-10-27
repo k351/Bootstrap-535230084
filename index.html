@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lifestyle Theme</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+</head>
+
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Lifestyle Vibes</strong></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" role="button">Subscribe</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Welcome to the Lifestyle Hub</h2>
+                    <h3>Explore trends, wellness, and living your best life</h3>
+                </hgroup>
+                <p>
+                    Lifestyle is all about finding balance, embracing health, and living
+                    in the moment. Whether you're into fitness, mindfulness, or just
+                    looking to elevate your daily routines, you've come to the right
+                    place.
+                </p>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1507919909716-c8262e491cde?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Wellness lifestyle image from Unsplash" />
+                    <figcaption>
+                        <a href="https://unsplash.com" target="_blank">Photo from Unsplash</a>
+                    </figcaption>
+                </figure>
+                <h3>Latest in Wellness</h3>
+                <p>
+                    Discover the latest trends in wellness, from meditation techniques
+                    to fitness tips that keep you grounded and healthy.
+                </p>
+                <h3>Explore Fashion & Trends</h3>
+                <p>
+                    Stay ahead in fashion with insights into what's trending,
+                    sustainable fashion tips, and more.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <section aria-label="Subscribe example">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Join Our Community</h2>
+                    <h3>Subscribe for the latest lifestyle updates</h3>
+                </hgroup>
+                <form class="grid">
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name" aria-label="First Name"
+                        required />
+                    <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
+                    <button type="submit" onclick="event.preventDefault()">
+                        Subscribe
+                    </button>
+                </form>
+            </article>
+        </div>
+    </section>
+
+    <footer class="container">
+        <small><a href="#">Privacy Policy</a> •
+            <a href="#">Terms & Conditions</a></small>
+    </footer>
+</body>
+
+</html>
