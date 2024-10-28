@@ -1,9 +1,10 @@
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
 }
 
-
+/* Nav */
 .navbar-brand {
     font-weight: bold;
 }
@@ -18,20 +19,136 @@
     background-color: white;
 }
 
+/* Carousel */
 .carousel-item {
-    height: 90dvh;
+    height: 75dvh;
 }
 
 .carousel-item img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+/* Description */
+.description {
+    padding: 40px 0;
+    /* Padding around the section */
+}
+
+.description img {
+    aspect-ratio: 16/9;
+    max-width: 100%;
+    /* Ensure responsiveness */
     object-fit: cover;
 }
 
+.description h2 {
+    margin: 20px 0;
+    /* Space above and below headings */
+    text-align: left;
+    /* Align left for larger screens */
+}
+
+.text-justify {
+    text-align: justify;
+    margin-bottom: 20px;
+    /* Space below paragraphs */
+}
+
+/* Join Section */
 .form-control::placeholder {
     color: white;
 }
 
 .btn-block {
     width: 100%;
+}
+
+/* ANIMATION */
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 1s forwards;
+    opacity: 0;
+}
+
+.slide-in-right {
+    animation: slideInRight 1s forwards;
+    opacity: 0;
+}
+
+.fade-in {
+    animation: fadeIn 1s forwards;
+    opacity: 0;
+}
+
+.image-load {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.loaded {
+    opacity: 1;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+
+    .description h2 {
+        text-align: center;
+        /* Center headings on smaller screens */
+        margin: 20px 0;
+        /* Space for smaller screens */
+    }
+
+    .text-justify {
+        text-align: center;
+        /* Center text on smaller screens */
+        margin: 10px 0;
+        /* Space for paragraphs */
+    }
 }

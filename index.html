@@ -5,11 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Lifestyle Theme</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Navigation Header -->
     <nav class="navbar navbar-expand-md navbar-dark bg-black">
         <div class="container px-2">
             <a class="navbar-brand text-white d-flex align-items-center" href="#">
@@ -33,12 +34,15 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Contact</a>
                     </li>
-                    <button class="nav-btn btn btn-sm btn-outline-light ms-2">Subscribe</button>
+                    <button type="submit" class="btn btn-outline-light" onclick="showAlert(event)">
+                        Subscribe
+                    </button>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Hero Carousel -->
     <main class="container-fluid p-0">
         <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -77,11 +81,107 @@
         </div>
     </main>
 
+    <!-- Lifestyle components -->
+        <section class="description py-5 text-bg-dark">
+            <div class="container px-4">
+                <div class="row align-items-center gx-5">
+                    <div class="col-md-6">
+                        <h2 class="slide-in-left">Balanced Nutrition</h2>
+                        <p class="text-justify fade-in slide-in-left">
+                            A balanced diet is fundamental to maintaining good health. It involves consuming a variety of foods
+                            from different food groups, including fruits, vegetables, whole grains, lean proteins, and healthy
+                            fats. This diversity ensures that your body receives all the essential nutrients it needs to function properly. By
+                            avoiding processed foods and excessive sugar intake, you can reduce the risk of chronic diseases, improve your energy levels,
+                            and support your overall well-being.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./Images/EatingHabit.jpg" class="img-fluid img-thumbnail image-load"
+                            alt="Balanced Nutrition Picture" onload="this.classList.add('loaded')">
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="row align-items-center mt-5">
+                    <div class="col-md-6">
+                        <img src="./Images/Running.jpg" class="img-fluid img-thumbnail image-load" alt="Running Picture"
+                            onload="this.classList.add('loaded')">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="slide-in-right">Regular Physical Activity</h2>
+                        <p class="text-justify fade-in slide-in-right">
+                            Engaging in regular physical activity is vital for a healthy lifestyle. It helps maintain a healthy
+                            weight, improves cardiovascular health, and boosts mood by releasing endorphins. Aim for at least 150 minutes of
+                            moderate exercise each week, such as brisk walking, cycling, or swimming. Additionally, incorporating strength
+                            training exercises at least twice a week can enhance muscle mass and bone density. Staying active not only improves
+                            physical health but also promotes mental clarity and resilience.
+                        </p>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="row align-items-center mt-5">
+                    <div class="col-md-6">
+                        <h2 class="slide-in-left">Mental Health Awareness</h2>
+                        <p class="text-justify fade-in slide-in-left">
+                            Mental health is a crucial aspect of overall well-being and should not be overlooked. Managing
+                            stress and nurturing mental health can significantly impact your quality of life. Practicing mindfulness, engaging in
+                            hobbies, and spending time with loved ones can help alleviate stress and improve emotional well-being. It’s essential to
+                            recognize when you need support and seek help from professionals if needed. Prioritizing mental health leads to
+                            better decision-making, improved relationships, and a more fulfilling life.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./Images/Meditation.jpg" class="img-fluid img-thumbnail image-load" alt="Meditation Picture"
+                            onload="this.classList.add('loaded')">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- New Section for Products -->
+    <!-- <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Products</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="./Images/product1.jpg" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 1</h5>
+                            <p class="card-text">Description of product 1 goes here. It’s a great product!</p>
+                            <a href="#" class="btn btn-primary">View Product</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="./Images/product2.jpg" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 2</h5>
+                            <p class="card-text">Description of product 2 goes here. It’s a great product!</p>
+                            <a href="#" class="btn btn-primary">View Product</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="./Images/product3.jpg" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 3</h5>
+                            <p class="card-text">Description of product 3 goes here. It’s a great product!</p>
+                            <a href="#" class="btn btn-primary">View Product</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Join Section -->
     <section class="bg-black text-white py-5">
         <div class="container">
             <div class="text-center">
                 <h2>Join Our Community</h2>
-                <h3 class="mb-4">Subscribe for the latest lifestyle updates</h3>
+                <h4 class="mb-4">Subscribe for the latest lifestyle updates</h4>
                 <form class="row g-3 justify-content-center">
                     <div class="col-md-4">
                         <input type="text" class="form-control bg-dark text-white border-light" id="firstname"
@@ -91,9 +191,9 @@
                         <input type="email" class="form-control bg-dark text-white border-light" id="email" name="email"
                             placeholder="Email" aria-label="Email" required />
                     </div>
-                    <div class="d-grid col-md-2">
-                        <button type="submit" class="btn btn-outline-light btn-block w-100"
-                            onclick="event.preventDefault()">
+
+                    <div class="col-md-8"> <!-- Make the button take more space -->
+                        <button type="submit" class="btn btn-outline-light btn-block w-100" onclick="showAlert(event)">
                             Subscribe
                         </button>
                     </div>
@@ -104,12 +204,48 @@
 
     <footer class="container-fluid text-center py-3 bg-secondary text-white">
         <div class="text-center">
-            <h6>Copyright © 2024 Alvin Kurniawan | Hevy All Rights Reserved</h6>
+            <h6>© 2024 Alvin Kurniawan | Hevy All Rights Reserved</h6>
         </div>
     </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const animatedElements = document.querySelectorAll('.slide-in-left, .slide-in-right');
+            const imageElements = document.querySelectorAll('.image-load');
+
+            const imagesLoaded = () => {
+                return Array.from(imageElements).every(img => img.complete);
+            }
+
+            const handleScroll = () => {
+                if (imagesLoaded()) {
+                    animatedElements.forEach((element, index) => {
+                        const rect = element.getBoundingClientRect();
+                        if (rect.top < window.innerHeight && rect.bottom > 0) {
+                            if (element.tagName === "H2") { 
+                                element.classList.add('loaded');
+                            } else if (element.tagName === "P") { 
+                                setTimeout(() => {
+                                    element.classList.add('loaded');
+                                }, 500); 
+                            }
+                        }
+                    });
+                }
+            }
+
+            window.addEventListener('scroll', handleScroll);
+            handleScroll();
+        });
+
+        function showAlert(event) {
+                event.preventDefault(); 
+                const alertDiv = document.getElementById('subscribeAlert');
+                alertDiv.classList.remove('d-none'); 
+        }
+    </script>
 </body>
 
 </html>
