@@ -4,83 +4,197 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Us - Lifestyle Vibes</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+    <title>Lifestyle Theme</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="container-fluid">
-        <ul>
-            <li><strong>Lifestyle Vibes</strong></li>
-        </ul>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#" role="button">Subscribe</a></li>
-        </ul>
+    <!-- Navigation Header -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-black">
+        <div class="container px-2">
+            <a class="navbar-brand text-white d-flex align-items-center" href="./index.html">
+                <img src="Images/logo.webp" alt="Logo" width="80" height="50">
+                Lifestyle Vibes
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#subscribe">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <main class="container">
-        <div class="grid">
-            <section>
-                <hgroup>
-                    <h2>About Lifestyle Vibes</h2>
-                    <h3>Our Story & Vision</h3>
-                </hgroup>
+    <main class="container-fluid text-bg-dark p-5">
+        <div class="row align-items-center">
+            <section class="col-md-6">
+                <h2>About Lifestyle Vibes</h2>
+                <h3>Our Story & Vision</h3>
                 <p>
-                    Lifestyle Vibes was created with a simple goal: to help people live
-                    better, healthier, and more fulfilling lives. We believe that true
-                    happiness comes from balance, mindfulness, and a deep connection to
-                    the world around us.
+                    Lifestyle Vibes was created with a simple goal: to help people live better, healthier, and more
+                    fulfilling lives. We believe that true happiness comes from balance, mindfulness, and a deep
+                    connection to the world around us.
                 </p>
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1507919909716-c8262e491cde?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Nature and lifestyle image from Unsplash" />
-                    <figcaption>
-                        <a href="https://unsplash.com" target="_blank">Photo from Unsplash</a>
-                    </figcaption>
-                </figure>
                 <h3>Our Mission</h3>
                 <p>
-                    Our mission is to inspire and empower individuals to live
-                    consciously. We cover various aspects of life including wellness,
-                    fitness, fashion, and mindfulness to help our audience elevate their
+                    Our mission is to inspire and empower individuals to live consciously. We cover various aspects of
+                    life including wellness, fitness, fashion, and mindfulness to help our audience elevate their
                     everyday experiences.
                 </p>
-                <h3>Meet the Team</h3>
-                <p>
-                    Our team consists of wellness enthusiasts, fitness experts, and
-                    lifestyle gurus. We're dedicated to bringing you the latest insights
-                    and trends to help you live your best life.
-                </p>
             </section>
+
+            <figure class="col-md-6 text-center">
+                <img src="https://images.unsplash.com/photo-1507919909716-c8262e491cde?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="img-fluid rounded-3" alt="Nature and lifestyle image from Unsplash" />
+            </figure>
         </div>
     </main>
 
-    <section aria-label="Subscribe example">
+
+    <!-- Team Section -->
+    <section id="team" class="team section bg-secondary text-light py-5">
+        <div class="container text-center mb-5">
+            <h2 class="display-4 fw-bold mb-3">Our Team</h2>
+            <p class="lead">Delivering excellence through collaboration and expertise</p>
+            <hr>
+        </div>
+
         <div class="container">
-            <article>
-                <hgroup>
-                    <h2>Stay in the Loop</h2>
-                    <h3>Subscribe to Our Newsletter</h3>
-                </hgroup>
-                <form class="grid">
-                    <input type="text" id="firstname" name="firstname" placeholder="First Name" aria-label="First Name"
-                        required />
-                    <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
-                    <button type="submit" onclick="event.preventDefault()">
-                        Subscribe
-                    </button>
-                </form>
-            </article>
+            <div class="row gy-4">
+                <!-- Team Member 1 -->
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card bg-secondary text-light p-4 shadow-lg text-center">
+                        <img src="./Images/person1.jpeg" class="mb-3" alt="John Doe">
+                        <h4 class="fw-bold">John Doe</h4>
+                        <span>Fitness Expert</span>
+                        <p class="text-muted small">
+                            Empowering clients to achieve physical wellness and strength through personalized guidance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card bg-secondary text-light p-4 shadow-lg text-center">
+                        <img src="https://avatars.githubusercontent.com/u/76194460?v=4" class="mb-3"
+                            alt="Louis Febriano">
+                        <h4 class="fw-bold">Meditation Expert</h4>
+                        <span>Chief Technology Officer</span>
+                        <p class="text-muted small">
+                            Guiding inner peace and mindfulness practices for mental clarity and relaxation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card bg-secondary text-light p-4 shadow-lg text-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="mb-3"
+                            alt="Amanda Jepson">
+                        <h4 class="fw-bold">Psychologist</h4>
+                        <span>Accountant</span>
+                        <p class="text-muted small">
+                            Offering insights and support for mental health and emotional well-being.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="container">
-        <small><a href="#">Privacy Policy</a> •
-            <a href="#">Terms & Conditions</a></small>
+
+
+
+    <!-- Join Section with Terms and Services Modal -->
+    <section id="subscribe" class="bg-black text-white py-5">
+        <div class="container text-white">
+            <div class="text-center">
+                <h2>Stay in the Loop</h2>
+                <h4 class="mb-4">Subscribe to Our Newsletter</h4>
+                <form class="row g-3 justify-content-center" onsubmit="showSuccessAlert(event)">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control bg-dark text-white border-light" id="firstname"
+                            name="firstname" placeholder="First Name" aria-label="First Name" required />
+                    </div>
+                    <div class="col-md-4">
+                        <input type="email" class="form-control bg-dark text-white border-light" id="email" name="email"
+                            placeholder="Email" aria-label="Email" required />
+                    </div>
+                    <div class="col-md-8">
+                        <button type="button" class="btn btn-outline-light btn-block w-100"
+                            onclick="validateAndShowModal()">
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms and Services Modal -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="termsModalLabel">Terms and Services</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>By joining our community, you agree to receive our newsletter and promotional emails. You can
+                        unsubscribe anytime.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                        onclick="showSuccessAlert(event)">
+                        Accept and Join
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Alert -->
+    <div class="alert alert-success alert-dismissible fade show position-fixed w-100 text-center d-none"
+        id="successAlert" style="top: 0; z-index: 1050;" role="alert">
+        <strong>Success!</strong> You have subscribed to our community.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <!-- Error Alert -->
+    <div class="alert alert-danger alert-dismissible fade show position-fixed w-100 text-center d-none" id="errorAlert"
+        style="top: 0; z-index: 1050;" role="alert">
+        <strong>Error!</strong> Please fill out both the name and email fields.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center py-3 bg-secondary text-white">
+        <div class="text-center">
+            <h6>© 2024 Alvin Kurniawan | Lifestyle Vibes Rights Reserved</h6>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

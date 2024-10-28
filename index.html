@@ -1,89 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lifestyle Theme</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Lifestyle Theme</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<body>
-    <!-- Navigation Header -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-black">
-        <div class="container px-2">
-            <a class="navbar-brand text-white d-flex align-items-center" href="#">
-                <img src="Images/logo.webp" alt="Logo" width="80" height="50">
-                Lifestyle Vibes
-            </a>
+    <body>
+        <!-- Navigation Header -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-black">
+            <div class="container px-2">
+                <a class="navbar-brand text-white d-flex align-items-center" href="./index.html">
+                    <img src="Images/logo.webp" alt="Logo" width="80" height="50">
+                    Lifestyle Vibes
+                </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav ms-auto text-center">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Contact</a>
-                    </li>
-                    <button type="submit" class="btn btn-outline-light" onclick="showAlert(event)">
-                        Subscribe
-                    </button>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Carousel -->
-    <main class="container-fluid p-0">
-        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-
-            <div class="carousel-inner">
-
-                <div class="carousel-item align-items-center active">
-                    <img src="./Images/carousel1.jpg" class="d-block w-100" alt="Lifestyle image 1">
-                    <div class="carousel-caption d-block text-center bg-dark bg-opacity-50 p-4 rounded">
-                        <h2>Welcome to the Lifestyle Hub</h2>
-                        <p>Explore trends, wellness, and living your best life.</p>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img src="./Images/carousel2.webp" class="d-block w-100" alt="Lifestyle image 2">
-                    <div class="carousel-caption d-block text-center bg-dark bg-opacity-50 p-4 rounded">
-                        <h2>Latest in Wellness</h2>
-                        <p>Discover trends in wellness, from meditation techniques to fitness tips.</p>
-                    </div>
-                </div>
-
-                <div class="carousel-item align-items-center">
-                    <img src="./Images/carousel3.png" class="d-block w-100" alt="Lifestyle image 3">
-                    <div class="carousel-caption d-block text-center bg-dark bg-opacity-50 p-4 rounded">
-                        <h2>Embrace Healthy Choices</h2>
-                        <p>Fuel your body with wholesome, nutritious foods for a vibrant life.</p>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#subscribe">Subscribe</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </main>
+        </nav>
 
-    <!-- Lifestyle components -->
+        <!-- Hero Carousel -->
+        <main class="container-fluid p-0">
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item align-items-center active">
+                        <img src="./Images/carousel1.jpg" class="d-block w-100" alt="Lifestyle image 1">
+                        <div class="carousel-caption d-block text-center bg-dark bg-opacity-50 p-4 rounded">
+                            <h2>Welcome to the Lifestyle Hub</h2>
+                            <p>Explore trends, wellness, and living your best life.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./Images/carousel2.webp" class="d-block w-100" alt="Lifestyle image 2">
+                        <div class="carousel-caption d-block text-center bg-dark bg-opacity-50 p-4 rounded">
+                            <h2>Latest in Wellness</h2>
+                            <p>Discover trends in wellness, from meditation techniques to fitness tips.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item align-items-center">
+                        <img src="./Images/carousel3.png" class="d-block w-100" alt="Lifestyle image 3">
+                        <div class="carousel-caption d-block text-center bg-dark bg-opacity-50 p-4 rounded">
+                            <h2>Embrace Healthy Choices</h2>
+                            <p>Fuel your body with wholesome, nutritious foods for a vibrant life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Lifestyle components -->
         <section class="description py-5 text-bg-dark">
-            <div class="container px-4">
+            <div class="container px-3">
                 <div class="row align-items-center gx-5">
                     <div class="col-md-6">
                         <h2 class="slide-in-left">Balanced Nutrition</h2>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
                 <hr class="my-4">
-                <div class="row align-items-center mt-5">
+                <div class="row align-items-center my-5">
                     <div class="col-md-6">
                         <img src="./Images/Running.jpg" class="img-fluid img-thumbnail image-load" alt="Running Picture"
                             onload="this.classList.add('loaded')">
@@ -137,115 +137,122 @@
             </div>
         </section>
 
-    <!-- New Section for Products -->
-    <!-- <section class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Featured Products</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="./Images/product1.jpg" class="card-img-top" alt="Product 1">
+        <!-- Card Section -->
+        <section class="card-section container-fluid p-5">
+            <h2 class="text-center mb-5 text-white">Explore Our Plans</h2>
+            <div class="card-grid row justify-content-center">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card bg-dark text-white">
+                        <img src="./Images/fitness.jpeg" class="card-img-top img-fluid rounded" alt="Feature Image 1" />
                         <div class="card-body">
-                            <h5 class="card-title">Product 1</h5>
-                            <p class="card-text">Description of product 1 goes here. It’s a great product!</p>
-                            <a href="#" class="btn btn-primary">View Product</a>
+                            <h4 class="card-title text-center">Fitness</h4>
+                            <p class="card-text text-center">Enhance your strength and stamina with our customized fitness
+                                programs. Perfect
+                                for anyone looking to stay active and maintain a balanced lifestyle.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="./Images/product2.jpg" class="card-img-top" alt="Product 2">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card bg-dark text-white">
+                        <img src="./Images/meditation.webp" class="card-img-top img-fluid" alt="Feature Image 2" />
                         <div class="card-body">
-                            <h5 class="card-title">Product 2</h5>
-                            <p class="card-text">Description of product 2 goes here. It’s a great product!</p>
-                            <a href="#" class="btn btn-primary">View Product</a>
+                            <h4 class="card-title text-center">Meditation</h4>
+                            <p class="card-text text-center">
+                                Discover the benefits of mindfulness and inner peace with our guided meditation sessions
+                                designed for relaxation and
+                                mental clarity.
+                            </p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="./Images/product3.jpg" class="card-img-top" alt="Product 3">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card bg-dark text-white">
+                        <img src="./Images/Diet.webp" class="card-img-top img-fluid" alt="Feature Image 3" />
                         <div class="card-body">
-                            <h5 class="card-title">Product 3</h5>
-                            <p class="card-text">Description of product 3 goes here. It’s a great product!</p>
-                            <a href="#" class="btn btn-primary">View Product</a>
+                            <h4 class="card-title text-center">Healthy</h4>
+                            <p class="card-text text-center">Explore tips and strategies to maintain a healthier lifestyle with
+                                balanced
+                                nutrition, exercise, and wellness practices.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section> -->
+        </section>
 
-    <!-- Join Section -->
-    <section class="bg-black text-white py-5">
-        <div class="container">
+        <!-- Join Section with Terms and Services Modal -->
+        <section id="subscribe" class="bg-black text-white py-5">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Join Our Community</h2>
+                    <h4 class="mb-4">Subscribe for the latest lifestyle updates</h4>
+                    <form class="row g-3 justify-content-center" onsubmit="showSuccessAlert(event)">
+                        <div class="col-md-4">
+                            <input type="text" class="form-control bg-dark text-white border-light" id="firstname"
+                                name="firstname" placeholder="First Name" aria-label="First Name" required />
+                        </div>
+                        <div class="col-md-4">
+                            <input type="email" class="form-control bg-dark text-white border-light" id="email" name="email"
+                                placeholder="Email" aria-label="Email" required />
+                        </div>
+                        <div class="col-md-8">
+                            <button type="button" class="btn btn-outline-light btn-block w-100" onclick="validateAndShowModal()">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Terms and Services Modal -->
+        <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-dark text-white">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="termsModalLabel">Terms and Services</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>By joining our community, you agree to receive our newsletter and promotional emails. You can
+                            unsubscribe anytime.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="showSuccessAlert(event)">
+                                Accept and Join
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Success Alert -->
+        <div class="alert alert-success alert-dismissible fade show position-fixed w-100 text-center d-none" id="successAlert"
+            style="top: 0; z-index: 1050;" role="alert">
+            <strong>Success!</strong> You have subscribed to our community.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <!-- Error Alert -->
+        <div class="alert alert-danger alert-dismissible fade show position-fixed w-100 text-center d-none" id="errorAlert"
+            style="top: 0; z-index: 1050;" role="alert">
+            <strong>Error!</strong> Please fill out both the name and email fields.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="container-fluid text-center py-3 bg-secondary text-white">
             <div class="text-center">
-                <h2>Join Our Community</h2>
-                <h4 class="mb-4">Subscribe for the latest lifestyle updates</h4>
-                <form class="row g-3 justify-content-center">
-                    <div class="col-md-4">
-                        <input type="text" class="form-control bg-dark text-white border-light" id="firstname"
-                            name="firstname" placeholder="First Name" aria-label="First Name" required />
-                    </div>
-                    <div class="col-md-4">
-                        <input type="email" class="form-control bg-dark text-white border-light" id="email" name="email"
-                            placeholder="Email" aria-label="Email" required />
-                    </div>
-
-                    <div class="col-md-8"> <!-- Make the button take more space -->
-                        <button type="submit" class="btn btn-outline-light btn-block w-100" onclick="showAlert(event)">
-                            Subscribe
-                        </button>
-                    </div>
-                </form>
+                <h6>© 2024 Alvin Kurniawan | Lifestyle Vibes Rights Reserved</h6>
             </div>
-        </div>
-    </section>
+        </footer>
 
-    <footer class="container-fluid text-center py-3 bg-secondary text-white">
-        <div class="text-center">
-            <h6>© 2024 Alvin Kurniawan | Hevy All Rights Reserved</h6>
-        </div>
-    </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const animatedElements = document.querySelectorAll('.slide-in-left, .slide-in-right');
-            const imageElements = document.querySelectorAll('.image-load');
-
-            const imagesLoaded = () => {
-                return Array.from(imageElements).every(img => img.complete);
-            }
-
-            const handleScroll = () => {
-                if (imagesLoaded()) {
-                    animatedElements.forEach((element, index) => {
-                        const rect = element.getBoundingClientRect();
-                        if (rect.top < window.innerHeight && rect.bottom > 0) {
-                            if (element.tagName === "H2") { 
-                                element.classList.add('loaded');
-                            } else if (element.tagName === "P") { 
-                                setTimeout(() => {
-                                    element.classList.add('loaded');
-                                }, 500); 
-                            }
-                        }
-                    });
-                }
-            }
-
-            window.addEventListener('scroll', handleScroll);
-            handleScroll();
-        });
-
-        function showAlert(event) {
-                event.preventDefault(); 
-                const alertDiv = document.getElementById('subscribeAlert');
-                alertDiv.classList.remove('d-none'); 
-        }
-    </script>
-</body>
-
-</html>
+    </html>
