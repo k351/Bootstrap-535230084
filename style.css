@@ -5,6 +5,10 @@
 }
 
 /* Nav */
+.navbar {
+    max-height: 10dvh;
+}
+
 .navbar-brand {
     font-weight: bold;
 }
